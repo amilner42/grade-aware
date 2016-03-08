@@ -1,8 +1,8 @@
 import {Component} from 'angular2/core';
 
 @Component({
-  selector: 'toolbar',
   moduleId: module.id,
+  selector: 'toolbar',
   templateUrl: './toolbar.component.html',
   styleUrls: ['./toolbar.component.css']
 })
