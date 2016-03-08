@@ -2,12 +2,12 @@ import {Component, ViewEncapsulation} from 'angular2/core';
 import {ROUTER_DIRECTIVES, RouteConfig} from 'angular2/router';
 import {NavbarComponent} from './navbar.component';
 import {ToolbarComponent} from './toolbar.component';
-import {HomeComponent} from '../../home/components/home.component';
-import {AboutComponent} from '../../about/components/about.component';
 import {NameListService} from '../../shared/services/name-list.service';
+import {AttendanceComponent} from '../../attendance/attendance.component';
+import {GradesComponent} from '../../grades/grades.component';
 
 @Component({
-  selector: 'sd-app',
+  selector: 'app',
   viewProviders: [NameListService],
   moduleId: module.id,
   templateUrl: './app.component.html',
@@ -15,7 +15,7 @@ import {NameListService} from '../../shared/services/name-list.service';
   directives: [ROUTER_DIRECTIVES, NavbarComponent, ToolbarComponent]
 })
 @RouteConfig([
-  { path: '/',      name: 'Home',  component: HomeComponent  },
-  { path: '/about', name: 'About', component: AboutComponent }
+  { path: '/',      name: 'Grades',  component: GradesComponent},
+  { path: '/attendance', name: 'Attendance', component: AttendanceComponent}
 ])
 export class AppComponent {}
