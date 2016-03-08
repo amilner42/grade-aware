@@ -1,7 +1,7 @@
 @import 'colors';
 
 :host {
-  background-color: md-color($app-blue, 500);
+  background-color: $blue;
   color: rgba(255,255,255,0.87);
   display: block;
   height: 48px;
