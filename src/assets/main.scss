@@ -17,6 +17,7 @@ body {
   font-size: $md-body-font-size-base;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  height: 100vh;
 }
 
 p {
@@ -59,4 +60,13 @@ button {
 
 button:hover {
   background-color: $blue;
+}
+
+.main-content {
+  border: 1px solid $light-grey;
+  margin: 30px;
+  // 156px = 48px toolbar + 48px navbar + 30px margin * 2
+  height: -moz-calc(100% - 156px); /* Firefox */
+  height: -webkit-calc(100% - 156px); /* Chrome, Safari */
+  height: calc(100% - 156px); /* IE9+ and future browsers */
 }
