@@ -27,7 +27,7 @@ export const BOOTSTRAP_MODULE     = ENABLE_HOT_LOADING ? 'hot_loader_main' : 'ma
 export const APP_TITLE            = 'Grade Aware';
 
 export const APP_SRC              = 'src';
-export const ASSETS_SRC           = `${APP_SRC}/assets`;
+export const styles           = `${APP_SRC}/shared/styles`;
 
 export const TOOLS_DIR            = 'tools';
 export const DOCS_DEST            = 'docs';
@@ -82,13 +82,13 @@ export const PROD_NPM_DEPENDENCIES: IDependency[] = normalizeDependencies([
 ]);
 
 // Declare local files that needs to be injected
-export const APP_ASSETS: IDependency[] = [
-  { src: `${ASSETS_SRC}/main.css`, inject: true }
+export const STYLES: IDependency[] = [
+  { src: `${styles}/main.css`, inject: true }
 ];
 
 
-export const DEV_DEPENDENCIES = DEV_NPM_DEPENDENCIES.concat(APP_ASSETS);
-export const PROD_DEPENDENCIES = PROD_NPM_DEPENDENCIES.concat(APP_ASSETS);
+export const DEV_DEPENDENCIES = DEV_NPM_DEPENDENCIES.concat(STYLES);
+export const PROD_DEPENDENCIES = PROD_NPM_DEPENDENCIES.concat(STYLES);
 
 
 // ----------------
