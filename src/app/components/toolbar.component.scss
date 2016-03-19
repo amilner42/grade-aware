@@ -1,4 +1,4 @@
-@import 'colors';
+@import '../../shared/styles/colors';
 
 :host {
   background-color: $blue;
@@ -15,4 +15,8 @@ h1 {
   letter-spacing: 0.1px;
   line-height: 48px;
   margin: 0;
+}
+
+.toolbar-name {
+  float: right;
 }

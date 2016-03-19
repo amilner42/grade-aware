@@ -1,4 +1,6 @@
 import {Component} from 'angular2/core';
+import {Injectable, Inject} from 'angular2/core';
+import {StudentService} from '../../shared/services/student.service';
 
 @Component({
   moduleId: module.id,
@@ -6,4 +8,16 @@ import {Component} from 'angular2/core';
   templateUrl: './toolbar.component.html',
   styleUrls: ['./toolbar.component.css']
 })
-export class ToolbarComponent {}
+
+@Injectable()
+export class ToolbarComponent {
+
+  public firstName: string;
+  public lastName: string;
+
+  constructor(@Inject(StudentService) StudentService) {
+    this.firstName = StudentService.get().firstName;
+    this.lastName = StudentService.get().lastName;
+  }
+
+}

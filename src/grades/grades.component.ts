@@ -20,7 +20,6 @@ export class GradesComponent {
 
   constructor(@Inject(StudentService) StudentService) {
     this.student = StudentService.get();
-    console.log(this.student.firstName);
   }
 
 }
