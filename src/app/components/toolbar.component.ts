@@ -12,8 +12,8 @@ import {StudentService} from '../../shared/services/student.service';
 @Injectable()
 export class ToolbarComponent {
 
-  public firstName: string;
-  public lastName: string;
+  private firstName: string;
+  private lastName: string;
 
   constructor(@Inject(StudentService) StudentService) {
     this.firstName = StudentService.get().firstName;
