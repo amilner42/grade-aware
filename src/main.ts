@@ -8,6 +8,6 @@ if ('<%= ENV %>' === 'prod') { enableProdMode(); }
 
 bootstrap(AppComponent, [
   ROUTER_PROVIDERS,
-  provide(APP_BASE_HREF, { useValue: '<%= APP_BASE %>' }),
-  provide(StudentService, {useClass: StudentService})
+  StudentService,
+  provide(APP_BASE_HREF, { useValue: '<%= APP_BASE %>' })
 ]);
