@@ -1,0 +1,9 @@
+{
+  "firebase": "grade-aware",
+  "public": "dist/prod",
+  "ignore": [
+    "firebase.json",
+    "**/.*",
+    "**/node_modules/**"
+  ]
+}
