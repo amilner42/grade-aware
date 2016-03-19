@@ -1,8 +1,8 @@
 import {Component} from 'angular2/core';
-import {Class} from 'grades';
 import {Inject} from 'angular2/core';
-import {GradesService} from '../shared/services/grades.service';
 import {Injectable} from 'angular2/core';
+import {StudentService} from '../shared/services/student.service';
+import {Student} from 'student';
 
 @Component({
   moduleId: module.id,
@@ -16,10 +16,11 @@ import {Injectable} from 'angular2/core';
 @Injectable()
 export class GradesComponent {
 
-  private class_grades: Class[];
+  private student: Student;
 
-  constructor(@Inject(GradesService) GradesService) {
-    this.class_grades = GradesService.get();
+  constructor(@Inject(StudentService) StudentService) {
+    this.student = StudentService.get();
+    console.log(this.student.firstName);
   }
 
 }
