@@ -1,13 +1,27 @@
 @import '../shared/styles/colors';
 
 .grades-class {
-  border: 1px solid #E1E1E1;
-  margin: 5px 20px;
+  border: 2px solid #E1E1E1;
+  margin: 0px 20px 10px 20px;
   height: 60px;
   font-size: 40px;
-  text-align: center;
   line-height: 60px;
   vertical-align: middle;
-  color: $medium-grey;
+  color: $dark-grey;
   cursor: pointer;
+  float: left;
+  width: -moz-calc(100% - 40px); /* Firefox */
+  width: -webkit-calc(100% - 40px); /* Chrome, Safari */
+  width: calc(100% - 40px); /* IE9+ and future browsers */
+}
+
+.title {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.score {
+  float: right;
+  font-size: 20px;
+  margin-right: 10px;
 }
