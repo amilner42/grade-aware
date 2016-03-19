@@ -4,13 +4,15 @@ import {Injectable} from 'angular2/core';
 import {StudentService} from '../shared/services/student.service';
 import {Student} from 'student';
 import {NgFor} from 'angular2/common';
+import {ClassCard} from './class-card.component';
 
 @Component({
   moduleId: module.id,
   selector: 'grades',
   templateUrl: './grades.component.html',
   directives: [
-    NgFor
+    NgFor,
+    ClassCard
   ],
   styleUrls: [
     './grades.component.css'

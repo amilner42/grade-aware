@@ -1,8 +1,7 @@
-<div class="main-content">
-  <div class="space"></div>
-  <div class="grades-class" *ngFor="#class of student.classes">
-    {{class.name}}
-  </div>
+<div class='main-content'>
+  <div class='space'></div>
+
+  <class-card *ngFor='#class of student.classes' [classWithGrades]='class'></class-card>
 </div>
 
 
