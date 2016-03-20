@@ -309,6 +309,58 @@ export class StudentService {
             className: 'French 12'
           }
         ]
+      },
+      {
+        monthName: 'March',
+        year: 2015,
+        lates: [
+          {
+            day: 1,
+            className: 'French 12'
+          },
+          {
+            day: 2,
+            className: 'French 12'
+          },
+          {
+            day: 4,
+            className: 'French 12'
+          },
+          {
+            day: 6,
+            className: 'French 12'
+          }
+        ],
+        absents: [
+          {
+            day: 7,
+            className: 'French 12'
+          },
+          {
+            day: 8,
+            className: 'French 12'
+          },
+          {
+            day: 10,
+            className: 'French 12'
+          },
+          {
+            day: 12,
+            className: 'French 12'
+          },
+          {
+            day: 15,
+            className: 'French 12'
+          },
+          {
+            day: 17,
+            className: 'French 12'
+          },
+          {
+            day: 21,
+            className: 'French 12'
+          }
+        ]
       }
     ]
   };
