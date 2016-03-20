@@ -59,7 +59,7 @@ export class StudentService {
           },
           {
             'description': 'Midterm',
-            'score': 88,
+            'score': 100,
             'bin': 'Exam',
             'date': '12/05/2016'
           }
@@ -294,6 +294,18 @@ export class StudentService {
         absents: [
           {
             day: 2,
+            className: 'French 12'
+          },
+          {
+            day: 3,
+            className: 'French 12'
+          },
+          {
+            day: 4,
+            className: 'French 12'
+          },
+          {
+            day: 5,
             className: 'French 12'
           }
         ]
