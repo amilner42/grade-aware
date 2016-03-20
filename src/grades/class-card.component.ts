@@ -37,15 +37,7 @@ export class ClassCard {
     ClassCard.allClassCards.push(this);
     this.ColorService = ColorService;
     this.StudentService = StudentService;
-  }
-
-  // Turn all class cards off, and then turn this one on.
-  public setActive() {
-    var wasActive = this.isActive;
-    for(var currentCard of ClassCard.allClassCards) {
-        currentCard.isActive = false;
-    }
-    this.isActive = !wasActive;
+    this.isActive = false;
   }
 
   // In ngOnInit you can access inputs to the component, you cannot do this in
