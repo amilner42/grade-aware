@@ -10,6 +10,7 @@ and angular 2 support. I recommend you do the same.
 ##### Install Instructions (Linux):
 
 npm install -g ts-node
+
 npm install
 
 ##### Useful Commands:
