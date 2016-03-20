@@ -2,9 +2,9 @@ import {Component, ViewEncapsulation} from 'angular2/core';
 import {ROUTER_DIRECTIVES, RouteConfig} from 'angular2/router';
 import {NavbarComponent} from './navbar.component';
 import {ToolbarComponent} from './toolbar.component';
-import {AttendanceComponent} from '../../attendance/attendance.component';
-import {GradesComponent} from '../../grades/grades.component';
-import {CommentsComponent} from '../../comments/comments.component';
+import {AttendanceComponent} from '../attendance/attendance.component';
+import {GradesComponent} from '../grades/grades.component';
+import {CommentsComponent} from '../comments/comments.component';
 
 @Component({
   moduleId: module.id,

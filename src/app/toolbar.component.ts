@@ -1,6 +1,6 @@
 import {Component} from 'angular2/core';
 import {Injectable, Inject} from 'angular2/core';
-import {StudentService} from '../../shared/services/student.service';
+import {StudentService} from '../shared/services/student.service';
 
 @Component({
   moduleId: module.id,
