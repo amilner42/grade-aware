@@ -326,7 +326,7 @@ export class StudentService {
     }
 
     total /= classWithGrades.grades.length;
-    return total;
+    return Math.round(total);
   }
 
   public get(): Student {
