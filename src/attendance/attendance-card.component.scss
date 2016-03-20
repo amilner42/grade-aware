@@ -1,0 +1,19 @@
+@import '../shared/styles/colors';
+
+.attendance-card {
+  border: 2px solid $medium-grey;
+  min-height: 100px;
+  width: -moz-calc(20% - 24px); /* Firefox */
+  width: -webkit-calc(20% - 24px); /* Chrome, Safari */
+  width: calc(20% - 24px); /* IE9+ and future browsers */
+  margin: 20px 0 0 20px;
+  padding: 10px 0 0 10px;
+  background-color: $light-grey;
+  float: left;
+}
+
+.title {
+  font-size: 30px;
+  margin-bottom: 5px;
+  font-color: $dark-grey;
+}

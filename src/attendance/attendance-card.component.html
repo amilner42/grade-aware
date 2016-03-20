@@ -1,0 +1,22 @@
+<div class='attendance-card'>
+  <div class='title'>
+    {{attendanceMonth.monthName}}, {{attendanceMonth.year}}
+  </div>
+
+  <!-- Lates -->
+  <div *ngIf='attendanceMonth.lates'>
+    Lates: {{attendanceMonth.lates.length}}
+  </div>
+  <div *ngIf='attendanceMonth.lates === empty'>
+    Lates: 0
+  </div>
+
+  <!--Absents -->
+  <div *ngIf='attendanceMonth.absents'>
+    Absents: {{attendanceMonth.absents.length}}
+  </div>
+  <div *ngIf='attendanceMonth.absents === empty'>
+    Absents: 0
+  </div>
+
+</div>

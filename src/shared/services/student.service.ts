@@ -29,16 +29,6 @@ export class StudentService {
             'date': '15/05/2016'
           }
         ],
-        attendances: [
-          {
-            'type': 'l',
-            'date': '03/05/2015'
-          },
-          {
-            'type': 'a',
-            'date': '22/01/2016'
-          }
-        ],
         comments: [
           {
             'rating': 5,
@@ -72,16 +62,6 @@ export class StudentService {
             'score': 88,
             'bin': 'Exam',
             'date': '12/05/2016'
-          }
-        ],
-        attendances: [
-          {
-            'type': 'l',
-            'date': '03/05/2015'
-          },
-          {
-            'type': 'a',
-            'date': '22/01/2016'
           }
         ],
         comments: [
@@ -119,16 +99,6 @@ export class StudentService {
             'date': '08/05/2016'
           }
         ],
-        attendances: [
-          {
-            'type': 'l',
-            'date': '03/05/2015'
-          },
-          {
-            'type': 'a',
-            'date': '22/01/2016'
-          }
-        ],
         comments: [
           {
             'rating': 5,
@@ -156,16 +126,6 @@ export class StudentService {
             'score': 84,
             'bin': 'Exam',
             'date': '03/05/2016'
-          }
-        ],
-        attendances: [
-          {
-            'type': 'l',
-            'date': '03/05/2015'
-          },
-          {
-            'type': 'a',
-            'date': '22/01/2016'
           }
         ],
         comments: [
@@ -197,16 +157,6 @@ export class StudentService {
             'date': '03/05/2016'
           }
         ],
-        attendances: [
-          {
-            'type': 'l',
-            'date': '03/05/2015'
-          },
-          {
-            'type': 'a',
-            'date': '22/01/2016'
-          }
-        ],
         comments: [
           {
             'rating': 99,
@@ -234,16 +184,6 @@ export class StudentService {
             'score': 73,
             'bin': 'Homework',
             'date': '03/05/2016'
-          }
-        ],
-        attendances: [
-          {
-            'type': 'l',
-            'date': '03/05/2015'
-          },
-          {
-            'type': 'a',
-            'date': '22/01/2016'
           }
         ],
         comments: [
@@ -281,16 +221,6 @@ export class StudentService {
             'date': '04/05/2016'
           }
         ],
-        attendances: [
-          {
-            'type': 'l',
-            'date': '03/05/2015'
-          },
-          {
-            'type': 'a',
-            'date': '22/01/2016'
-          }
-        ],
         comments: [
           {
             'rating': 5,
@@ -301,6 +231,70 @@ export class StudentService {
             'rating': 2,
             'comment': 'Stopped doing his homework, he needs to start paying attention',
             'date': '22/05/2016'
+          }
+        ]
+      }
+    ],
+    attendanceMonths: [
+      {
+        monthName: 'September',
+        year: 2014
+      },
+      {
+        monthName: 'October',
+        year: 2014,
+        lates: [
+          {
+            day: 15,
+            className: 'Chemistry 12'
+          }
+        ]
+      },
+      {
+        monthName: 'November',
+        year: 2014,
+        absents: [
+          {
+            day: 1,
+            className: 'Chemistry 12'
+          },
+          {
+            day: 2,
+            className: 'French 12'
+          }
+        ]
+      },
+      {
+        monthName: 'December',
+        year: 2014
+      },
+      {
+        monthName: 'January',
+        year: 2015,
+        lates: [
+          {
+            day: 10,
+            className: 'Chemistry 12'
+          },
+          {
+            day: 11,
+            className: 'Physics 11'
+          }
+        ]
+      },
+      {
+        monthName: 'Febuary',
+        year: 2015,
+        lates: [
+          {
+            day: 1,
+            className: 'French 12'
+          }
+        ],
+        absents: [
+          {
+            day: 2,
+            className: 'French 12'
           }
         ]
       }

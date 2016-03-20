@@ -4,12 +4,12 @@ declare module 'student' {
     firstName: string,
     lastName: string,
     classes: Class[]
+    attendanceMonths: AttendanceMonth[];
   }
 
   export interface Class {
     name: String;
     grades: Grade[];
-    attendances: Attendance[];
     comments: Comment[];
   }
 
@@ -20,14 +20,21 @@ declare module 'student' {
     date: string;
   }
 
-  export interface Attendance {
-    type: string;
-    date: string;
-  }
-
   export interface Comment {
     rating: number;
     comment: string;
     date: string;
+  }
+
+  export interface AttendanceMonth {
+    monthName: string;
+    year: number;
+    lates?: AttendanceCard[];
+    absents?: AttendanceCard[];
+  }
+
+  export interface AttendanceCard {
+    day: number;
+    className: string;
   }
 }
