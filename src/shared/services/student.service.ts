@@ -283,7 +283,7 @@ export class StudentService {
         ]
       },
       {
-        monthName: 'Febuary',
+        monthName: 'February',
         year: 2015,
         lates: [
           {
