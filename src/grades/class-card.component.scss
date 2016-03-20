@@ -30,3 +30,25 @@
 .active-tab {
   background-color: white;
 }
+
+.grade-class-details {
+  font-size: 30px;
+  display: inline-block;
+  margin: 0px 20px 10px 20px;
+  border: 2px solid #E1E1E1;
+  background-color: white;
+  width: -moz-calc(100% - 40px); /* Firefox */
+  width: -webkit-calc(100% - 40px); /* Chrome, Safari */
+  width: calc(100% - 40px); /* IE9+ and future browsers */
+  color: $dark-grey;
+
+  h1 {
+    margin-left: 10px;
+    display: inline-block;
+  }
+
+  .description {
+    font-size: 30px;
+    color: $dark-grey;
+  }
+}

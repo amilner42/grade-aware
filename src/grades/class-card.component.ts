@@ -34,7 +34,6 @@ export class ClassCard {
 
   // Add this class card to the static list of class cards, inject services.
   constructor(@Inject(ColorService) ColorService, @Inject(StudentService) StudentService) {
-    this.isActive = ClassCard.allClassCards.length === 0;
     ClassCard.allClassCards.push(this);
     this.ColorService = ColorService;
     this.StudentService = StudentService;
@@ -42,10 +41,11 @@ export class ClassCard {
 
   // Turn all class cards off, and then turn this one on.
   public setActive() {
+    var wasActive = this.isActive;
     for(var currentCard of ClassCard.allClassCards) {
         currentCard.isActive = false;
     }
-    this.isActive = true;
+    this.isActive = !wasActive;
   }
 
   // In ngOnInit you can access inputs to the component, you cannot do this in

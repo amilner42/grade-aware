@@ -14,10 +14,11 @@ declare module 'student' {
   }
 
   export interface Grade {
-  score: number;
-  bin: string;
-  date: string;
-}
+    description: string;
+    score: number;
+    bin: string;
+    date: string;
+  }
 
   export interface Attendance {
     type: string;

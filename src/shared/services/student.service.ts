@@ -12,14 +12,21 @@ export class StudentService {
         name: 'Chemistry 12',
         grades: [
           {
-            'score': 0,
-            'bin': 'Homework',
+            'description': 'Midterm 1',
+            'score': 65,
+            'bin': 'Exam',
             'date': '02/05/2016'
           },
           {
-            'score': 0,
+            'description': 'Midterm 2',
+            'score': 81,
             'bin': 'Exam',
             'date': '03/05/2016'
+          }, {
+            'description': 'Pop quiz on chemical naming',
+            'score': 58,
+            'bin': 'Exam',
+            'date': '15/05/2016'
           }
         ],
         attendances: [
@@ -49,14 +56,22 @@ export class StudentService {
         name: 'French 12',
         grades: [
           {
+            'description': 'Read 1 full french novel',
             'score': 100,
             'bin': 'Homework',
             'date': '02/05/2016'
           },
           {
+            'description': 'Write an essay about the novel',
             'score': 100,
-            'bin': 'Exam',
+            'bin': 'Homework',
             'date': '03/05/2016'
+          },
+          {
+            'description': 'Midterm',
+            'score': 88,
+            'bin': 'Exam',
+            'date': '12/05/2016'
           }
         ],
         attendances: [
@@ -86,14 +101,22 @@ export class StudentService {
         name: 'Physics 11',
         grades: [
           {
-            'score': 99,
-            'bin': 'Homework',
+            'description': 'Lab 1 - Electromagnets',
+            'score': 40,
+            'bin': 'Lab',
             'date': '02/05/2016'
           },
           {
-            'score': 100,
+            'description': 'Lab 2 - Friction',
+            'score': 87,
             'bin': 'Exam',
             'date': '03/05/2016'
+          },
+          {
+            'description': 'Lab 3 - Momentum',
+            'score': 81,
+            'bin': 'Lab',
+            'date': '08/05/2016'
           }
         ],
         attendances: [
@@ -123,12 +146,14 @@ export class StudentService {
         name: 'Music 12',
         grades: [
           {
-            'score': 92,
-            'bin': 'Homework',
+            'description': 'Listening Quiz',
+            'score': 75,
+            'bin': 'Exam',
             'date': '02/05/2016'
           },
           {
-            'score': 81,
+            'description': 'Technical Audio Exam',
+            'score': 84,
             'bin': 'Exam',
             'date': '03/05/2016'
           }
@@ -160,12 +185,14 @@ export class StudentService {
         name: 'Drama 12',
         grades: [
           {
+            'description': 'Monologue',
             'score': 92,
-            'bin': 'Homework',
+            'bin': 'Exam',
             'date': '02/05/2016'
           },
           {
-            'score': 81,
+            'description': 'Final Play',
+            'score': 95,
             'bin': 'Exam',
             'date': '03/05/2016'
           }
@@ -197,13 +224,15 @@ export class StudentService {
         name: 'English 12',
         grades: [
           {
-            'score': 10,
+            'description': 'Write an essay about Romeo and Juliet',
+            'score': 70,
             'bin': 'Homework',
             'date': '02/05/2016'
           },
           {
-            'score': 12,
-            'bin': 'Exam',
+            'description': 'Write an essay about The Tempest',
+            'score': 73,
+            'bin': 'Homework',
             'date': '03/05/2016'
           }
         ],
@@ -234,14 +263,22 @@ export class StudentService {
         name: 'Socials 11',
         grades: [
           {
+            'description': 'Midterm 1',
             'score': 50,
-            'bin': 'Homework',
+            'bin': 'Exam',
             'date': '02/05/2016'
           },
           {
-            'score': 13,
+            'description': 'Midterm 2',
+            'score': 55,
             'bin': 'Exam',
             'date': '03/05/2016'
+          },
+          {
+            'description': 'Draw a map of Canada',
+            'score': 88,
+            'bin': 'Homework',
+            'date': '04/05/2016'
           }
         ],
         attendances: [

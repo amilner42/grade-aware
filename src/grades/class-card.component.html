@@ -4,6 +4,13 @@
   </div>
 
   <div class="score">
-    %{{classAverage}}
+    {{classAverage}}%
+  </div>
+</div>
+
+<div *ngIf="isActive" class="grade-class-details">
+  <div *ngFor="#grade of classWithGrades.grades">
+      <h1 class="description">{{grade.description}}</h1>
+      <h1 class="score">{{grade.bin}}, {{grade.date}}, {{grade.score}}%</h1>
   </div>
 </div>
