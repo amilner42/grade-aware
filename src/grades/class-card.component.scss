@@ -2,6 +2,7 @@
 
 .grades-class {
   border: 2px solid #E1E1E1;
+  background-color: $light-grey;
   margin: 0px 20px 10px 20px;
   height: 60px;
   font-size: 40px;
@@ -24,4 +25,8 @@
   float: right;
   font-size: 20px;
   margin-right: 10px;
+}
+
+.active-tab {
+  background-color: white;
 }

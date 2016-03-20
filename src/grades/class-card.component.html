@@ -1,4 +1,4 @@
-<div class="grades-class" [ngStyle]="{'border-color':  borderColor}">
+<div class="grades-class" [ngStyle]="{'border-color':  borderColor}" [ngClass]="{'active-tab': isActive}" (click)="setActive()">
   <div class="title">
     {{classWithGrades.name}}
   </div>
