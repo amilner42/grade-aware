@@ -368,9 +368,9 @@ export class StudentService {
   public orderClassesByAverageGrade(student: Student): void {
     student.classes.sort((a, b) => {
       if (this.averageGradeForClass(a) < this.averageGradeForClass(b)) {
-        return -1;
-      } else if (this.averageGradeForClass(a) > this.averageGradeForClass(b)) {
         return 1;
+      } else if (this.averageGradeForClass(a) > this.averageGradeForClass(b)) {
+        return -1;
       } else {
         return 0;
       }
