@@ -3,6 +3,7 @@
 .attendance-card {
   border: 2px solid $medium-grey;
   min-height: 100px;
+  min-width: 275px;
   width: -moz-calc(20% - 24px); /* Firefox */
   width: -webkit-calc(20% - 24px); /* Chrome, Safari */
   width: calc(20% - 24px); /* IE9+ and future browsers */
@@ -10,6 +11,32 @@
   padding: 10px 0 0 10px;
   background-color: $light-grey;
   float: left;
+
+  @media screen and (max-width: 1600px) and (min-width: 1260px) {
+    width: -moz-calc(25% - 24px); /* Firefox */
+    width: -webkit-calc(25% - 24px); /* Chrome, Safari */
+    width: calc(25% - 24px); /* IE9+ and future browsers */
+  }
+
+  @media screen and (max-width: 1260px) and (min-width: 970px) {
+    width: -moz-calc(33% - 24px); /* Firefox */
+    width: -webkit-calc(33% - 24px); /* Chrome, Safari */
+    width: calc(33% - 24px); /* IE9+ and future browsers */
+  }
+
+  @media screen and (max-width: 970px) and (min-width: 670px) {
+    width: -moz-calc(49.5% - 24px); /* Firefox */
+    width: -webkit-calc(49.5% - 24px); /* Chrome, Safari */
+    width: calc(49.5% - 24px); /* IE9+ and future browsers */
+  }
+
+  @media screen and (max-width: 670px) {
+    width: 90%;
+    margin-left: 5%;
+    //display: inline-block;
+  }
+
+
 }
 
 .title {

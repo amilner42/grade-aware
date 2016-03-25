@@ -16,11 +16,20 @@ export class AttendanceCardComponent {
 
   /* tslint:disable */
   @Input() private attendanceMonth: AttendanceMonth;
+  @Input() private last: boolean;
   /* tslint:enable */
   private colorService: ColorService;
 
   constructor(@Inject(ColorService) ColorService) {
     this.colorService = ColorService;
+  }
+
+  public marginForLast(isLast: boolean): string {
+    if(isLast) {
+      return '20px';
+    } else {
+      return '0px';
+    }
   }
 
 }

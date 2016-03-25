@@ -22,5 +22,4 @@ export class AttendanceComponent {
   constructor(@Inject(StudentService) StudentService) {
     this.student = StudentService.get();
   }
-
 }
