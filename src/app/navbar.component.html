@@ -1,5 +1,14 @@
 <nav>
-  <a [routerLink]="['Grades']">GRADES</a>
-  <a [routerLink]="['Attendance']">ATTENDANCE</a>
-  <a [routerLink]="['Comments']">COMMENTS</a>
+  <div class="nav-tab" [routerLink]="['Grades']">
+    <i class="material-icons">school</i>
+    <span class="nav-tab-name">GRADES</span>
+  </div>
+  <div class="nav-tab" [routerLink]="['Attendance']">
+    <i class="material-icons">date_range</i>
+    <span class="nav-tab-name">ATTENDANCE</span>
+  </div>
+  <div class="nav-tab" [routerLink]="['Comments']">
+    <i class="material-icons">forum</i>
+    <span class="nav-tab-name">COMMENTS</span>
+  </div>
 </nav>

@@ -8,8 +8,13 @@
   padding: 0 16px;
 }
 
-nav a {
-  color: $medium-grey;
+.material-icons {
+  margin-top: 10px;
+  margin-right: 8px;
+  float: left;
+}
+
+.nav-tab-name {
   font-size: 14px;
   font-weight: 500;
   line-height: 48px;
@@ -18,6 +23,12 @@ nav a {
   vertical-align: middle;
 }
 
-nav a.router-link-active {
+.nav-tab {
+  display: inline-block;
+  color: $medium-grey;
+  cursor: pointer;
+}
+
+.nav-tab.router-link-active {
   color: $blue;
 }
