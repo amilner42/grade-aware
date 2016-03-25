@@ -7,7 +7,7 @@
   height: 48px;
   padding: 0 16px;
 
-  @media screen and (max-width: 440px) {
+  @media screen and (max-width: 450px) {
     margin: 0;
     padding: 0;
   }
@@ -18,7 +18,7 @@
   margin-right: 8px;
   float: left;
 
-  @media screen and (max-width: 440px) {
+  @media screen and (max-width: 450px) {
     margin-left: -moz-calc(50% - 12px); /* Firefox */
     margin-left: -webkit-calc(50% - 12px); /* Chrome, Safari */
     margin-left: calc(50% - 12px); /* IE9+ and future browsers */
@@ -33,7 +33,7 @@
   text-decoration: none;
   vertical-align: middle;
 
-  @media screen and (max-width: 440px) {
+  @media screen and (max-width: 450px) {
     display: none;
   }
 }
@@ -44,7 +44,7 @@
   cursor: pointer;
   height: 48px;
 
-  @media screen and (max-width: 440px) {
+  @media screen and (max-width: 450px) {
     width: 33%;
     margin: 0;
     border: 1px solid $light-grey;
