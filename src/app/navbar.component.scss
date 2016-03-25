@@ -6,12 +6,22 @@
   display: block;
   height: 48px;
   padding: 0 16px;
+
+  @media screen and (max-width: 440px) {
+    margin: 0;
+    padding: 0;
+  }
 }
 
 .material-icons {
   margin-top: 10px;
   margin-right: 8px;
-  float: left;
+
+  @media screen and (max-width: 440px) {
+    margin-left: -moz-calc(50% - 12px); /* Firefox */
+    margin-left: -webkit-calc(50% - 12px); /* Chrome, Safari */
+    margin-left: calc(50% - 12px); /* IE9+ and future browsers */
+  }
 }
 
 .nav-tab-name {
@@ -21,12 +31,24 @@
   margin-right: 20px;
   text-decoration: none;
   vertical-align: middle;
+
+  @media screen and (max-width: 440px) {
+    display: none;
+  }
 }
 
 .nav-tab {
   display: inline-block;
   color: $medium-grey;
   cursor: pointer;
+  height: 48px;
+
+  @media screen and (max-width: 440px) {
+    width: 33%;
+    margin: 0;
+    border: 1px solid $light-grey;
+    float: left;
+  }
 }
 
 .nav-tab.router-link-active {
