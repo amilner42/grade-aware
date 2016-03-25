@@ -16,6 +16,7 @@
 .material-icons {
   margin-top: 10px;
   margin-right: 8px;
+  float: left;
 
   @media screen and (max-width: 440px) {
     margin-left: -moz-calc(50% - 12px); /* Firefox */
