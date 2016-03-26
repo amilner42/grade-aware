@@ -28,14 +28,14 @@ export class ClassCard {
   /* tslint:enable */
   private borderColor: string;
   private classAverage: number;
-  private ColorService;
+  private colorService;
   private StudentService;
   private isActive: boolean;
 
   // Add this class card to the static list of class cards, inject services.
   constructor(@Inject(ColorService) ColorService, @Inject(StudentService) StudentService) {
     ClassCard.allClassCards.push(this);
-    this.ColorService = ColorService;
+    this.colorService = ColorService;
     this.StudentService = StudentService;
     this.isActive = false;
   }
@@ -44,6 +44,6 @@ export class ClassCard {
   // the constructor.
   ngOnInit() {
     this.classAverage = this.StudentService.averageGradeForClass(this.classWithGrades);
-    this.borderColor = this.ColorService.getColorFromScore(this.classAverage);
+    this.borderColor = this.colorService.getColorFromScore(this.classAverage);
   }
 }

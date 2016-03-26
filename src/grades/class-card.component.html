@@ -1,4 +1,5 @@
-<div class="grades-class" [ngStyle]="{'border-color':  borderColor}" [ngClass]="{'active-tab': isActive}" (click)="isActive = !isActive">
+<div class="grades-class" [ngStyle]="{'border-color':  borderColor}"
+     [ngClass]="{'active-tab': isActive}" (click)="isActive = !isActive">
   <div class="title">
     {{classWithGrades.name}}
   </div>
@@ -9,8 +10,9 @@
 </div>
 
 <div *ngIf="isActive" class="grade-class-details">
-  <div *ngFor="#grade of classWithGrades.grades">
-      <h1 class="description">{{grade.description}}</h1>
-      <h1 class="score">{{grade.bin}}, {{grade.date}}, {{grade.score}}%</h1>
+  <div *ngFor="#grade of classWithGrades.grades; #last = last"
+       [ngClass]="{'no-bottom-margin': last}" class="grade-class-detail">
+    <h1 class="description">{{grade.description}}</h1>
+    <h1 class="score">{{grade.bin}}, {{grade.date}}, {{grade.score}}%</h1>
   </div>
 </div>
