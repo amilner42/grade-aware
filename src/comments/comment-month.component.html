@@ -1,6 +1,11 @@
 <div>
-  <div>
-    {{commentMonth.monthName}}, {{commentMonth.year}}
+  <h1 class="title-month">
+    {{commentMonth.monthName}}
+    <span class="title-year">
+      {{commentMonth.year}}
+    </span>
+  </h1>
+  <div class="comments">
+    <comment *ngFor="#comment of commentMonth.comments;" [comment]="comment"></comment>
   </div>
-  <comment *ngFor="#comment of commentMonth.comments;" [comment]="comment"></comment>
 </div>

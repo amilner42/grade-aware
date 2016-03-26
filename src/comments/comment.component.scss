@@ -1,0 +1,51 @@
+@import "../shared/styles/colors";
+
+.comment-card {
+  border: 2px solid $light-grey;
+  margin-bottom: 10px;
+  float: right;
+  width: 95%;
+  display: inline-block;
+}
+
+.comment {
+  margin: 10px 20px 20px 20px;
+}
+
+.comment-title {
+  display: inline-block;
+  vertical-align: bottom;
+  font-size: 24px;
+  color: $dark-grey;
+}
+
+.class-name {
+  display: inline-block;
+  font-size: 24px;
+  margin: 10px 0 0 10px;
+  color: $dark-grey;
+}
+
+.teacher-name {
+  font-size: 18px;
+  display: inline-block;
+  color: $dark-grey;
+  float: right;
+  margin: 10px 10px 0 0;
+}
+
+.day {
+  width: 5%;
+  height: 100%;
+  display: inline-block;
+  color: $medium-grey;
+  float: left;
+  text-align: center;
+  font-size: 24px;
+}
+
+:host {
+  width: 100%;
+  display: inline-block;
+  vertical-align: middle;
+}

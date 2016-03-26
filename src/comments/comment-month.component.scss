@@ -1,0 +1,17 @@
+@import "../shared/styles/colors";
+
+.title-month {
+  margin: 20px 20px 10px 20px;
+  border-bottom: 2px solid $light-grey;
+  color: $medium-grey;
+}
+
+.title-year {
+  float: right;
+  color: $medium-grey;
+}
+
+.comments {
+  margin: 20px 20px 20px 20px;
+  display: inline-block;
+}

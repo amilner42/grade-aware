@@ -5,6 +5,7 @@ import {LocationStrategy, HashLocationStrategy } from 'angular2/router';
 import {AppComponent} from './app/app.component';
 import {StudentService} from './shared/services/student.service';
 import {ColorService} from './shared/services/color.service';
+import {DateService} from './shared/services/date.service';
 
 if ('<%= ENV %>' === 'prod') { enableProdMode(); }
 
@@ -12,6 +13,7 @@ bootstrap(AppComponent, [
   ROUTER_PROVIDERS,
   StudentService,
   ColorService,
+  DateService,
   provide(APP_BASE_HREF, { useValue: '<%= APP_BASE %>' }),
   provide(LocationStrategy, {useClass: HashLocationStrategy})
 ]);
