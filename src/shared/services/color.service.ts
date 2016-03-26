@@ -68,4 +68,10 @@ export class ColorService {
     return this.colorGradient[indexInGradient];
   }
 
+  public getColorFromRating(rating: number): string {
+    var ratio = 5 / (this.colorGradient.length - 1);
+    var indexInGradient = Math.round((5 - rating) / ratio);
+   return this.colorGradient[indexInGradient];
+  }
+
 }

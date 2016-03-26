@@ -1,7 +1,7 @@
 <div class="day">
   {{dateService.dayToString(comment.day)}}
 </div>
-<div class="comment-card">
+<div class="comment-card" [ngStyle]="{'border-color': colorService.getColorFromRating(comment.rating)}">
 
   <div class="teacher-name">
     {{comment.teacherFirstName}} {{comment.teacherLastName}}
