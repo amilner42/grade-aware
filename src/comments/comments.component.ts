@@ -5,6 +5,7 @@ import {Student} from 'student';
 import {CommentMonthComponent} from './comment-month.component';
 import {NgFor} from 'angular2/common';
 import {Injectable} from 'angular2/core';
+import {ReversePipe} from '../shared/pipes/reverse.pipe';
 
 @Component({
   moduleId: module.id,
@@ -16,6 +17,9 @@ import {Injectable} from 'angular2/core';
   directives: [
     CommentMonthComponent,
     NgFor
+  ],
+  pipes: [
+    ReversePipe
   ]
 })
 

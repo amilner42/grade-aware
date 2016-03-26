@@ -1,3 +1,3 @@
 <div class="main-content">
-  <comment-month *ngFor="#commentMonth of student.commentMonths;" [commentMonth]="commentMonth"></comment-month>
+  <comment-month *ngFor="#commentMonth of student.commentMonths | reverse;" [commentMonth]="commentMonth"></comment-month>
 </div>

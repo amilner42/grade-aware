@@ -3,6 +3,7 @@ import {Inject} from 'angular2/core';
 import {StudentService} from '../shared/services/student.service';
 import {Student} from 'student';
 import {AttendanceCardComponent} from './attendance-card.component';
+import {ReversePipe} from '../shared/pipes/reverse.pipe';
 
 @Component({
   moduleId: module.id,
@@ -13,6 +14,9 @@ import {AttendanceCardComponent} from './attendance-card.component';
   ],
   directives: [
     AttendanceCardComponent
+  ],
+  pipes: [
+    ReversePipe
   ]
 })
 export class AttendanceComponent {

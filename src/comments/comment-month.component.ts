@@ -3,6 +3,7 @@ import {CommentMonth} from 'student';
 import {Input} from 'angular2/core';
 import {NgFor} from 'angular2/common';
 import {CommentComponent} from './comment.component';
+import {ReversePipe} from '../shared/pipes/reverse.pipe';
 
 @Component({
   moduleId: module.id,
@@ -14,6 +15,9 @@ import {CommentComponent} from './comment.component';
   directives: [
     NgFor,
     CommentComponent
+  ],
+  pipes: [
+    ReversePipe
   ]
 })
 
