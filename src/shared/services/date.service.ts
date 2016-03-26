@@ -16,7 +16,7 @@ export class DateService {
     if(this.RD_SUFFIX.includes(day)) {
       return day.toString().concat('rd');
     } else if (this.ST_SUFFIX.includes(day)) {
-      return day.toString.concat('st');
+      return day.toString().concat('st');
     } else if (this.ND_SUFFIX.includes(day)) {
       return day.toString().concat('nd');
     } else if (this.TH_SUFFIX.includes(day)) {

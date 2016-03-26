@@ -2,7 +2,7 @@
 
 .comment-card {
   border: 2px solid $light-grey;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   float: right;
   width: 95%;
   display: inline-block;
@@ -10,6 +10,7 @@
 
 .comment {
   margin: 10px 20px 20px 20px;
+  width: 100%;
 }
 
 .comment-title {
@@ -17,21 +18,25 @@
   vertical-align: bottom;
   font-size: 24px;
   color: $dark-grey;
+  margin: 20px 0 20px 20px;
 }
 
 .class-name {
   display: inline-block;
-  font-size: 24px;
-  margin: 10px 0 0 10px;
+  float: right;
+  text-align: right;
+  font-size: 18px;
+  margin: 5px 5px 0 0;
   color: $dark-grey;
 }
 
 .teacher-name {
   font-size: 18px;
   display: inline-block;
+  text-align: right;
   color: $dark-grey;
   float: right;
-  margin: 10px 10px 0 0;
+  margin: 5px 5px 0 0;
 }
 
 .day {

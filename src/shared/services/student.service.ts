@@ -372,34 +372,24 @@ export class StudentService {
             teacherFirstName: 'Max',
             teacherLastName: 'Guild',
             className: 'Chemistry 12',
-            title: 'John not coming to class',
-            day: 23,
-            comment: 'John has not been showing up for class at all, this is a ' +
-              'serious concern of mine, do you know why he has not been showi ng' +
-              'up?',
-            rating: 5
-          },
-          {
-            teacherFirstName: 'Max',
-            teacherLastName: 'Guild',
-            className: 'Chemistry 12',
-            title: 'John not coming to class',
+            title: 'John Not Coming to Class',
             day: 23,
             comment: 'John has not been showing up for class at all, this is a ' +
             'serious concern of mine, do you know why he has not been showing ' +
-            'up?',
-            rating: 5
+            'up? We are only a few weeks into the term but he could fall behind ' +
+            'quickly if he continues not to show up.',
+            rating: 4
           },
           {
-            teacherFirstName: 'Max',
-            teacherLastName: 'Guild',
-            className: 'Chemistry 12',
-            title: 'John not coming to class',
-            day: 23,
-            comment: 'John has not been showing up for class at all, this is a ' +
-            'serious concern of mine, do you know why he has not been showing ' +
-            'up?',
-            rating: 5
+            teacherFirstName: 'Rebecca',
+            teacherLastName: 'Loon',
+            className: 'English 11',
+            title: 'John Placed in the Top 1% in the Province',
+            day: 30,
+            comment: 'John has truly impressed me with his essay on the importance ' +
+            'of clean drinking water in medieval times. Truly a great work and ' +
+            'more importantly I see lots of potential for him!',
+            rating: 1
           }
         ]
       },
@@ -411,80 +401,38 @@ export class StudentService {
             teacherFirstName: 'Max',
             teacherLastName: 'Guild',
             className: 'Chemistry 12',
-            title: 'John not coming to class',
-            day: 23,
-            comment: 'John has not been showing up for class at all, this is a ' +
-            'serious concern of mine, do you know why he has not been showing ' +
-            'up?',
-            rating: 5
-          },
-          {
-            teacherFirstName: 'Max',
-            teacherLastName: 'Guild',
-            className: 'Chemistry 12',
-            title: 'John not coming to class',
-            day: 23,
-            comment: 'John has not been showing up for class at all, this is a ' +
-            'serious concern of mine, do you know why he has not been showing ' +
-            'up?',
-            rating: 5
-          },
-          {
-            teacherFirstName: 'Max',
-            teacherLastName: 'Guild',
-            className: 'Chemistry 12',
-            title: 'John not coming to class',
-            day: 23,
-            comment: 'John has not been showing up for class at all, this is a ' +
-            'serious concern of mine, do you know why he has not been showing ' +
-            'up?',
+            title: 'John Still Not Coming to Class',
+            day: 13,
+            comment: 'We need to speak as soon as possible. If john does not' +
+            ' begin to take this class more seriously he will fail, and then' +
+            ' he will have to be held back a year. We can fix this now if we do' +
+            ' not waste time.',
             rating: 5
           }
         ]
       },
       {
-        monthName: 'January',
-        year: 2015,
+        monthName: 'November',
+        year: 2014,
         comments: [
           {
             teacherFirstName: 'Max',
             teacherLastName: 'Guild',
             className: 'Chemistry 12',
-            title: 'John not coming to class',
-            day: 23,
-            comment: 'John has not been showing up for class at all, this is a ' +
-            'serious concern of mine, do you know why he has not been showing ' +
-            'up?',
-            rating: 5
-          },
-          {
-            teacherFirstName: 'Max',
-            teacherLastName: 'Guild',
-            className: 'Chemistry 12',
-            title: 'John not coming to class',
-            day: 23,
-            comment: 'John has not been showing up for class at all, this is a ' +
-            'serious concern of mine, do you know why he has not been showing ' +
-            'up?',
-            rating: 5
-          },
-          {
-            teacherFirstName: 'Max',
-            teacherLastName: 'Guild',
-            className: 'Chemistry 12',
-            title: 'John not coming to class',
-            day: 23,
-            comment: 'John has not been showing up for class at all, this is a ' +
-            'serious concern of mine, do you know why he has not been showing ' +
-            'up?',
-            rating: 5
+            title: 'John Doing Better',
+            day: 1,
+            comment: 'We spoke with him, he was very upset, but most importantly' +
+            ' now he is doing well. He might just get through this term, it is ' +
+            'going to be essential that he continues to do his homework throughout ' +
+            'the next few weeks.',
+            rating: 2
           }
         ]
       }
     ]
   };
 
-  public orderClassesByAverageGrade(student: Student): void {
+  public orderClassesByAverageGrade(student:Student):void {
     student.classes.sort((a, b) => {
       if (this.averageGradeForClass(a) < this.averageGradeForClass(b)) {
         return 1;
@@ -496,7 +444,7 @@ export class StudentService {
     });
   }
 
-  public averageGradeForClass(classWithGrades: Class): number {
+  public averageGradeForClass(classWithGrades:Class):number {
     var total = 0;
     for (var i = 0; i < classWithGrades.grades.length; i++) {
       total += classWithGrades.grades[i].score;
@@ -506,7 +454,7 @@ export class StudentService {
     return Math.round(total);
   }
 
-  public get(): Student {
+  public get():Student {
     return this.student;
   }
 }
