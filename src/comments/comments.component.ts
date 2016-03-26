@@ -1,4 +1,10 @@
 import {Component} from 'angular2/core';
+import {StudentService} from '../shared/services/student.service';
+import {Inject} from 'angular2/core';
+import {Student} from 'student';
+import {CommentMonthComponent} from './comment-month.component';
+import {NgFor} from 'angular2/common';
+import {Injectable} from 'angular2/core';
 
 @Component({
   moduleId: module.id,
@@ -6,8 +12,20 @@ import {Component} from 'angular2/core';
   templateUrl: './comments.component.html',
   styleUrls: [
     './comments.component.css'
+  ],
+  directives: [
+    CommentMonthComponent,
+    NgFor
   ]
 })
+
+@Injectable()
 export class CommentsComponent {
+
+  private student: Student;
+
+  constructor(@Inject(StudentService) StudentService) {
+    this.student = StudentService.get();
+  }
 
 }

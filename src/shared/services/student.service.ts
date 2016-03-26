@@ -362,6 +362,25 @@ export class StudentService {
           }
         ]
       }
+    ],
+    commentMonths: [
+      {
+        monthName: 'September',
+        year: 2014,
+        comments: [
+          {
+            teacherFirstName: 'Max',
+            teacherLastName: 'Guild',
+            className: 'Chemistry 12',
+            title: 'John not coming to class',
+            day: 23,
+            comment: 'John has not been showing up for class at all, this is a' +
+              'serious concern of mine, do you know why he has not been showing' +
+              'up?',
+            rating: 5
+          }
+        ]
+      }
     ]
   };
 

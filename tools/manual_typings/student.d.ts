@@ -1,28 +1,22 @@
 declare module 'student' {
 
   export interface Student {
-    firstName: string,
-    lastName: string,
-    classes: Class[]
+    firstName: string;
+    lastName: string;
+    classes: Class[];
     attendanceMonths: AttendanceMonth[];
+    commentMonths: CommentMonth[];
   }
 
   export interface Class {
     name: String;
     grades: Grade[];
-    comments: Comment[];
   }
 
   export interface Grade {
     description: string;
     score: number;
     bin: string;
-    date: string;
-  }
-
-  export interface Comment {
-    rating: number;
-    comment: string;
     date: string;
   }
 
@@ -37,4 +31,21 @@ declare module 'student' {
     day: number;
     className: string;
   }
+
+  export interface CommentMonth {
+    monthName: string;
+    year: number;
+    comments: Comment[];
+  }
+
+  export interface Comment {
+    teacherFirstName: string;
+    teacherLastName: string;
+    className: string;
+    title: string;
+    comment: string;
+    day: number;
+    rating: number;
+  }
+
 }
