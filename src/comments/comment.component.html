@@ -3,16 +3,24 @@
 </div>
 <div class="comment-card" [ngStyle]="{'border-color': colorService.getColorFromRating(comment.rating)}">
 
-  <div class="teacher-name">
-    {{comment.teacherFirstName}} {{comment.teacherLastName}}
+
+  <div class="stamp">
+    <div class="teacher-name">
+      {{comment.teacherFirstName}} {{comment.teacherLastName}}
+    </div>
     <br>
     <div class="class-name">
       {{comment.className}}
+    </div>
+    <br>
+    <div class="date-top-right">
+      {{dateService.dayToString(comment.day)}}, {{year}}
     </div>
   </div>
   <div class="comment-title">
     {{comment.title}}
   </div>
+
 
   <br>
 

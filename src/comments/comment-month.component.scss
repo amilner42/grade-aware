@@ -9,6 +9,10 @@
 .title-year {
   float: right;
   color: $medium-grey;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 }
 
 .comments {

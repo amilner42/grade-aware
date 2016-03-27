@@ -20,6 +20,7 @@ export class CommentComponent {
 
   /* tslint:disable */
   @Input() private comment: Comment;
+  @Input() private year: number;
   /* tslint:enable */
   private dateService;
   private colorService;

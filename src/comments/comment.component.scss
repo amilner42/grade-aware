@@ -4,21 +4,55 @@
   border: 2px solid $light-grey;
   margin-bottom: 20px;
   float: right;
-  width: 95%;
+  width: -moz-calc(100% - 90px); /* Firefox */
+  width: -webkit-calc(100% - 90px); /* Chrome, Safari */
+  width: calc(100% - 90px); /* IE9+ and future browsers */
   display: inline-block;
+
+  @media screen and (max-width: 768px) {
+    width: 100% !important;
+  }
+}
+
+.stamp {
+  display: inline-block;
+  float: right;
+  margin: 10px 10px 0 0;
+}
+
+.date-top-right {
+
+  display: none;
+
+  @media screen and (max-width: 768px) {
+    font-size: 18px;
+    color: $dark-grey;
+    display: inline-block !important;
+    float: right;
+    margin: 5px 5px 0 0;
+    text-align: right;
+  }
 }
 
 .comment {
+  display: inline-block;
   margin: 10px 20px 20px 20px;
+  padding-right: 30px;
   width: 100%;
 }
 
 .comment-title {
   display: inline-block;
+  float: left;
   vertical-align: bottom;
   font-size: 24px;
   color: $dark-grey;
   margin: 20px 0 20px 20px;
+  max-width: 60%;
+
+  @media screen and (max-width: 500px) {
+    max-width: 100%;
+  }
 }
 
 .class-name {
@@ -40,13 +74,17 @@
 }
 
 .day {
-  width: 5%;
+  width: 90px;
   height: 100%;
   display: inline-block;
   color: $medium-grey;
   float: left;
   text-align: center;
   font-size: 24px;
+
+  @media screen and (max-width: 768px) {
+    display: none !important;
+  }
 }
 
 :host {

@@ -6,6 +6,6 @@
     </span>
   </h1>
   <div class="comments">
-    <comment *ngFor="#comment of commentMonth.comments | reverse;" [comment]="comment"></comment>
+    <comment *ngFor="#comment of commentMonth.comments | reverse;" [comment]="comment" [year]="commentMonth.year"></comment>
   </div>
 </div>
