@@ -1,5 +1,8 @@
 # Introduction
 
+NOTE: This is an old quick repo for pitching an idea me and a friend had. We didn't end up working on it.
+Don't use this app as a kickstarter for developing an app, use [this](https://github.com/amilner42/web-app-kickstarter)
+
 Welcome. This is an angular 2 typescript client. Let's get started.
 
 ##### IDE
